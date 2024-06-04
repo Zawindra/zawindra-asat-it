@@ -13,6 +13,35 @@
 
 <body>
 
+    <nav class="rounded-pill d-flex align-items-center justify-content-evenly"
+    style="height: 80px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+    <div class=" mx-5">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/image/logo 1.png" alt="" width="120px" height="50px">
+        </a>
+    </div>
+    <div class="container d-flex justify-content-end mx-3" id="rightnav" style="gap: 24px;">
+        <a href="/Tentang Kami/index.html" class="list-right  text-decoration-none" style="color: #2E5070;">Tentang
+            Kami</a>
+        <a href="/Klinik Kucing/index.html" class="list-right  text-decoration-none">Klinik</a>
+        <a href="/Daycare  Grooming/index.html" class="list-right  text-decoration-none">Daycare & Grooming</a>
+        <a href="/Cat Adoption/index.html" class="list-right  text-decoration-none">Adopsi</a>
+        <img src="/image/open.svg" class="hamburger" alt="" id="menu"
+            onclick="myFunction(); changeImage()">
+    </div>
+</nav>
+<div id="hamburger-div">
+    <div class="container lowercontainer">
+        <a href="/Tentang Kami/index.html" class="text-decoration-none" style="color: #2E5070;">Tentang Kami</a>
+        <a href="/Klinik Kucing/index.html" class="text-decoration-none" style="color: #2E5070;">Klinik</a>
+        <a href="/Daycare  Grooming/index.html" class="text-decoration-none" style="color: #2E5070;">Daycare & Grooming</a>
+        <a href="/Cat Adoption/index.html" class="text-decoration-none" style="color: #2E5070;">Adopsi</a>
+        <a href="https://wa.me/0812345678910">
+            <p class="align-content-center justify-content-center"  style="color: #2E5070;"> <img src="/image/Group (1).png" alt="">0812-3456-78910</p>
+        </a>
+    </div>
+</div>
+
     <main>
         <div class="img-adoption" style="background-color:#EDF8F9;">
             <img src="/image/hero (5).png" alt="">
@@ -201,7 +230,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Tidak menemukan kucing yang tepat untuk Anda?</h5>
                             <p class="card-text">Isi form di bawah ini, kami akan memberitahu Anda jika ada yang menitipkan kucing yang Anda inginkan.</p>
-                            <form>
+                            <form id="form" method="dialog">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
                                     <input type="text" class="form-control" id="nama" placeholder="Tuliskan nama Anda">
@@ -222,9 +251,22 @@
                                 font-weight: 600;
                                 line-height: 36px;
                                 text-align: center;
-                                ">Submit</button>
-                            </form>
+                                " id="submit">Submit</button>
+                        </form>
+                            <div id="thanks" class="hidden">
+                                <h2 style="
+                                color: #2E5070;
+                                font-size: 36px;
+                                font-weight: 400;
+                                line-height: 54px;
+                                text-align: center;">Terima kasih telah mengisi formulir.
+                                    Kami akan memberitahu Anda via email jika kami menemukan kucing yang Anda cari.
+                                    😃</h2>
+                            </div>
+
                         </div>
+
+
                     </div>
                     <div class="col-md-6 image-section d-flex justify-content-center align-items-center">
                         <img src="/image/Image.png" alt="Cute cat">
@@ -277,6 +319,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script>
+
+        </script>
+            <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -9,9 +9,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
+
+    <nav class="rounded-pill d-flex align-items-center justify-content-evenly"
+    style="height: 80px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+    <div class=" mx-5">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/image/logo 1.png" alt="" width="120px" height="50px">
+        </a>
+    </div>
+    <div class="container d-flex justify-content-end mx-3" id="rightnav" style="gap: 24px;">
+        <a href="/Tentang Kami/index.html" class="list-right  text-decoration-none" style="color: #2E5070;">Tentang
+            Kami</a>
+        <a href="/Klinik Kucing/index.html" class="list-right  text-decoration-none">Klinik</a>
+        <a href="/Daycare  Grooming/index.html" class="list-right  text-decoration-none">Daycare & Grooming</a>
+        <a href="/Cat Adoption/index.html" class="list-right  text-decoration-none">Adopsi</a>
+        <img src="/image/open.svg" class="hamburger" alt="" id="menu"
+            onclick="myFunction(); changeImage()">
+    </div>
+</nav>
+<div id="hamburger-div">
+    <div class="container lowercontainer">
+        <a href="/Tentang Kami/index.html" class="text-decoration-none" style="color: #2E5070;">Tentang Kami</a>
+        <a href="/Klinik Kucing/index.html" class="text-decoration-none" style="color: #2E5070;">Klinik</a>
+        <a href="/Daycare  Grooming/index.html" class="text-decoration-none" style="color: #2E5070;">Daycare & Grooming</a>
+        <a href="/Cat Adoption/index.html" class="text-decoration-none" style="color: #2E5070;">Adopsi</a>
+        <a href="https://wa.me/0812345678910">
+            <p class="align-content-center justify-content-center"  style="color: #2E5070;"> <img src="/image/Group (1).png" alt="">0812-3456-78910</p>
+        </a>
+    </div>
+</div>
 
     <main>
         <div class="img-kucing" style="background-color:#EDF8F9;">
